@@ -22,31 +22,23 @@ public class TestDemo {
 
 
         if (Age>0 && Age<18)
-        {
+
             if (Gender == "Male")
-            {
                 System.out.println("User is a Boy");
-            }
             else if (Gender== "Female")
-            {
                 System.out.println("User is a Girl");
-            }
-        }
+
         else if (Age>=18 && Age<60)
-        {
             if (Gender == "Male")
-            {
+
                 System.out.println("User is a Man");
-            }
+
             else if (Gender == "Female")
-            {
                 System.out.println("User is a Woman");
-            }
-        }
+
+
         else
-        {
                 System.out.println("User is a Senior Citizen");
-        }
 
     }
 }

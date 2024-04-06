@@ -1,3 +1,5 @@
+package Assignments;
+
 public class SquareORCube {
 
     private static int result;

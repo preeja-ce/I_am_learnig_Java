@@ -1,10 +1,10 @@
-public class Day3 {
+public class Java3 {
 
     public static void main(String[] args) {
-            Day3 d3 = new Day3();
-            d3.printName("Preeja");
-            int age = d3.Adulthood("Preeja", 30);
-            System.out.println(" Preeja has outlived " +age + " years");
+        Java3 d3 = new Java3();
+        d3.printName("Preeja");
+        int age = d3.Adulthood("Preeja", 30);
+        System.out.println(" Preeja has outlived " +age + " years");
 
 
     }
