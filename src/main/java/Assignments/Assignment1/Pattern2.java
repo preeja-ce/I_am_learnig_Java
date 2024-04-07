@@ -1,4 +1,4 @@
-package Assignments;
+package Assignments.Assignment1;
 
 public class Pattern2 {
 
