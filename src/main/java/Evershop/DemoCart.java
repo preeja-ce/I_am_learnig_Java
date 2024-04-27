@@ -143,27 +143,8 @@ public class DemoCart {
                 }
                 System.out.println("");
 
-
-
-                //table[contains(@class,'items-table listing')]/tbody/tr/td//div[@class='cart-item-variant-options mt-05']/ul/li[1]/span[1] size
-                //table[contains(@class,'items-table listing')]/tbody/tr/td//div[@class='cart-item-variant-options mt-05']/ul/li[1]/span[2] L
-                //table[contains(@class,'items-table listing')]/tbody/tr/td//div[@class='cart-item-variant-options mt-05']/ul/li[2]/span[1] color
-                //table[contains(@class,'items-table listing')]/tbody/tr/td//div[@class='cart-item-variant-options mt-05']/ul/li[2]/span[2] blue
-
-
-
-                //table[contains(@class,'items-table listing')]/tbody/tr/td[2]/div/span 708.00
-                //table[contains(@class,'items-table listing')]/tbody/tr/td[3]/span 1
-                //table[contains(@class,'items-table listing')]/tbody/tr/td[4]/span total 708
-
-
-
-
         }
 
-        //rows //table[contains(@class,'items-table listing')]/tbody/tr
-        //columns ////table[contains(@class,'items-table listing')]/tbody/tr/td
-    //namee //table[contains(@class,'items-table listing')]/tbody/tr/td/div/div[2]/a
 
     }
 
@@ -189,10 +170,11 @@ public class DemoCart {
 
             if(Rows.get(index).getText().contains(Name)){
                 String TextRow = Rows.get(index).getText();
+                WebElement elementToRemove =driver.findElement(By.xpath("//table[contains(@class,'items-table listing')]/tbody/tr["+(index+1)+"]/td//div[@class='cart-tem-info']"));
 
-                Rows.get(index).findElement(By.xpath("//a[contains(@class,'text-textSubdued')]")).click();
+                elementToRemove.findElement(By.xpath(".//a[contains(@class,'text-textSubdued')]")).click();
                 System.out.println("");
-                System.out.print("Deleted item ");
+                System.out.print("Deleted item "+Name);
                 System.out.println("");
 
                 Thread.sleep(5000);
