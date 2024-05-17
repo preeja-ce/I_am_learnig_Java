@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG EverShop Demo">
+    <test name="Test Evershop Website">
+        <classes>
+            <class name="TestNGEvershop">
+
+                <methods>
+                    <parameter name="item" value="Coated glitter chuck taylor all star"></parameter>
+                    <parameter name="size" value="M"></parameter>
+                    <parameter name="Color" value="Purple"></parameter>
+                    <parameter name="Qty" value="3"></parameter>
+
+                    <include name="addKidsItemToCart"></include>
+                    <include name="addWomenItemToCart"></include>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
